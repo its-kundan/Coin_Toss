@@ -1,0 +1,68 @@
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px 20px;
+    background-color: #72368b;
+    color: white;
+    z-index: 100;
+}
+
+.navbar-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 30px; 
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.navbar-links li {
+    display: inline;
+}
+
+.navbar-links a, .navbar-links button {
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+}
+
+.navbar-links a::after, .navbar-links button::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar-links a:hover::after, .navbar-links button:hover::after {
+    width: 100%;
+}
+
+.navbar-links a:active, .navbar-links button:active {
+    background-color: rgba(255, 255, 255, 0.1); 
+    transform: scale(1.1);
+    transition: transform 0.1s ease;
+}
