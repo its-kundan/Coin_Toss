@@ -11,10 +11,13 @@
     <header class="navbar">
         <div class="navbar-left">Coin Toss Website</div>
         <ul class="navbar-links">
+            <li href ="https://github.com/its-kundan/Coin_Toss"> <button> Github</button></li>
             <li><button onclick="toggleMode()">Dark/Light Mode</button></li>
             <li><button onclick="shareResult()">Share Result</button></li>
-            <li><button>About</button></li>
-            <li><button>Contact Us</button></li>
+            <li>
+                <button onclick="location.href='/components/About.html'"">About</button>
+            </li>
+                        <li><button>Contact Us</button></li>
         </ul>
     </header>
     
@@ -31,9 +34,22 @@
         </button>
         <p class="result"></p>
     </div>
-
-    <p class="result"></p>
-
+    
+    <div class="footer">
+        
+        <p>All rights reserved by Kundan Kumar © 2024</p>
+        <div class="social-icons">
+            <a href="https://twitter.com/kundan_k_" target="_blank" rel="noopener noreferrer">
+                <img src="images/x.png" alt="Twitter" class="icon">
+            </a>
+            <a href="https://www.linkedin.com/in/its-kundan/" target="_blank" rel="noopener noreferrer">
+                <img src="images/link.png" alt="LinkedIn" class="icon">
+            </a>
+            <a href="https://github.com/its-kundan" target="_blank" rel="noopener noreferrer">
+                <img src="images/github.png" alt="GitHub" class="icon">
+            </a>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
