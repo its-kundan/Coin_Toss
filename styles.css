@@ -3,33 +3,34 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+body {
     font-family: "Arial", sans-serif;
-    background:linear-gradient(
+    background: linear-gradient(
         135deg,
-        #8b9314, 
-        #ff6b6b
+        #7dbdb7, 
+        #ff6bdf
     );
     display: flex;
-    justify-content: center;
+    flex-direction: column; 
     align-items: center;
     height: 100vh;
     margin: 0;
-
+    padding-top: 80px; 
 }
 
-.coin-container{
-    background-color:rgb( 255,255,255,0.9);
+.coin-container {
+    background-color: rgb(255,255,255,0.9);
     border-radius: 20px;
     box-shadow: 1 10px 20px rgba(0,0,0,0.3);
     padding: 2rem;
-    text-align:center;
+    text-align: center;
     animation: fadeIn 1s ease;
     width: 80%;
     max-width: 500px;
     perspective: 1000px;
-
+    margin-top: 20px;
 }
+
 h1{
     color: #1017e5;
     font-size: 2.5rem;
