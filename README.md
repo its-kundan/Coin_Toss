@@ -8,7 +8,7 @@ If you have any feedback, please reach out to us at kundan51kk@gmail.com
 This is a website where we toss a coin. In this online payment era.Who is carrying coin, so I have created a project where any one toss a coin online.
 
 
-
+### Coin predict ( random)
 
 
 
