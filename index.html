@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Virtual Coin Toss - Make decisions with a digital coin flip">
-    <meta name="keywords" content="coin toss, virtual coin, heads tails, decision maker">
+    <meta name="description" content="Fun Coin Toss Game - Relive childhood memories with our magical coin flip!">
+    <meta name="keywords" content="coin toss, virtual coin, heads tails, decision maker, kids game, childhood">
     <meta name="author" content="Kundan Kumar">
-    <title>Virtual Coin Toss | Digital Decision Maker</title>
+    <title>🎮 Magical Coin Toss | Childhood Fun!</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
 </head>
 <body>
@@ -20,7 +20,7 @@
         <div class="nav-container">
             <div class="nav-brand">
                 <span class="brand-icon">🪙</span>
-                <span class="brand-text">Coin Toss</span>
+                <span class="brand-text">Magical Coin Toss</span>
             </div>
             
             <div class="nav-menu">
@@ -42,8 +42,18 @@
         <div class="container">
             <!-- Hero Section -->
             <section class="hero">
-                <h1 class="hero-title">Virtual Coin Toss</h1>
-                <p class="hero-subtitle">Make decisions with a digital coin flip</p>
+                <div class="hero-decoration">
+                    <span class="decoration-star">⭐</span>
+                    <span class="decoration-star">🌟</span>
+                    <span class="decoration-star">✨</span>
+                </div>
+                <h1 class="hero-title">🎮 Magical Coin Toss</h1>
+                <p class="hero-subtitle">Relive the magic of childhood decisions! Flip the coin and let fate decide! 🎲</p>
+                <div class="hero-decoration">
+                    <span class="decoration-star">🎈</span>
+                    <span class="decoration-star">🎪</span>
+                    <span class="decoration-star">🎨</span>
+                </div>
             </section>
 
             <!-- Coin Toss Section -->
@@ -52,22 +62,32 @@
                     <div class="coin-wrapper">
                         <div class="coin" id="coin">
                             <div class="coin-face coin-front">
-                                <span class="coin-text">HEADS</span>
+                                <div class="coin-image">
+                                    <div class="coin-heads-design">
+                                        <div class="coin-center">🪙</div>
+                                        <div class="coin-text">HEADS</div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="coin-face coin-back">
-                                <span class="coin-text">TAILS</span>
+                                <div class="coin-image">
+                                    <div class="coin-tails-design">
+                                        <div class="coin-center">🪙</div>
+                                        <div class="coin-text">TAILS</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     
                     <div class="coin-controls">
                         <button class="btn btn-toss" id="tossButton">
-                            <span class="btn-icon">🪙</span>
-                            Toss Coin
+                            <span class="btn-icon">🎲</span>
+                            Flip the Magic Coin!
                         </button>
                         <button class="btn btn-secondary" onclick="shareResult()" id="shareButton" disabled>
                             <span class="btn-icon">📤</span>
-                            Share Result
+                            Share the Magic!
                         </button>
                     </div>
                     
@@ -75,11 +95,11 @@
                         <div class="result-text" id="resultText"></div>
                         <div class="result-stats">
                             <div class="stat">
-                                <span class="stat-label">Heads:</span>
+                                <span class="stat-label">Heads Wins:</span>
                                 <span class="stat-value" id="headsCount">0</span>
                             </div>
                             <div class="stat">
-                                <span class="stat-label">Tails:</span>
+                                <span class="stat-label">Tails Wins:</span>
                                 <span class="stat-value" id="tailsCount">0</span>
                             </div>
                         </div>
@@ -89,22 +109,46 @@
 
             <!-- Features Section -->
             <section class="features">
-                <h2 class="section-title">Why Use Virtual Coin Toss?</h2>
+                <h2 class="section-title">Why Kids Love Our Magical Coin? 🎪</h2>
                 <div class="features-grid">
                     <div class="feature-card">
                         <div class="feature-icon">⚡</div>
-                        <h3>Instant Results</h3>
-                        <p>Get your decision in seconds with our fast, reliable coin toss</p>
+                        <h3>Super Fast Magic!</h3>
+                        <p>Watch the coin dance and twirl in the blink of an eye! ✨</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">📱</div>
-                        <h3>Mobile Friendly</h3>
-                        <p>Works perfectly on all devices - desktop, tablet, or mobile</p>
+                        <h3>Works Everywhere!</h3>
+                        <p>Play on your tablet, phone, or computer - the magic never stops! 🎮</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">🎯</div>
-                        <h3>Fair & Random</h3>
-                        <p>Uses true randomization for unbiased results every time</p>
+                        <h3>Fair & Fun!</h3>
+                        <p>Every flip is completely random - just like a real coin! 🎲</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h3>Beautiful Colors!</h3>
+                        <p>Bright, cheerful colors that make every flip exciting! 🌈</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fun Facts Section -->
+            <section class="fun-facts">
+                <h2 class="section-title">Did You Know? 🤔</h2>
+                <div class="facts-container">
+                    <div class="fact-item">
+                        <span class="fact-icon">📚</span>
+                        <p>The first coins were made in ancient Greece around 600 BC!</p>
+                    </div>
+                    <div class="fact-item">
+                        <span class="fact-icon">🎪</span>
+                        <p>Coin flipping has been used for thousands of years to make decisions!</p>
+                    </div>
+                    <div class="fact-item">
+                        <span class="fact-icon">🌟</span>
+                        <p>In some cultures, coins were believed to have magical powers!</p>
                     </div>
                 </div>
             </section>
@@ -117,9 +161,9 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <span class="brand-icon">🪙</span>
-                    <span class="brand-text">Coin Toss</span>
+                    <span class="brand-text">Magical Coin Toss</span>
                 </div>
-                <p class="footer-description">Making decisions easier in the digital age</p>
+                <p class="footer-description">Bringing back the joy of childhood decisions! 🎈</p>
             </div>
             
             <div class="footer-social">
@@ -135,7 +179,7 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2024 Kundan Kumar. All rights reserved.</p>
+                <p>&copy; 2024 Kundan Kumar. All rights reserved. Made with ❤️ for kids!</p>
             </div>
         </div>
     </footer>
