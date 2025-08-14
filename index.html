@@ -3,57 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toss Coin</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="components/Navbar.css">
+    <meta name="description" content="Virtual Coin Toss - Make decisions with a digital coin flip">
+    <meta name="keywords" content="coin toss, virtual coin, heads tails, decision maker">
+    <meta name="author" content="Kundan Kumar">
+    <title>Virtual Coin Toss | Digital Decision Maker</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
 </head>
 <body>
-    <header class="navbar">
-        <div class="navbar-left">Coin Toss Website</div>
-        <ul class="navbar-links">
-            <li>
-                <a href="https://github.com/its-kundan/Coin_Toss" target="_blank" rel="noopener noreferrer">
-                    <button>GitHub</button>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">🪙</span>
+                <span class="brand-text">Coin Toss</span>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="pages/about.html" class="nav-link">About</a>
+                <a href="pages/contact.html" class="nav-link">Contact</a>
+                <button class="btn btn-secondary" onclick="toggleTheme()">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <a href="https://github.com/its-kundan/Coin_Toss" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    <span class="github-icon">📁</span>
+                    GitHub
                 </a>
-            </li>
-            <li><button onclick="toggleMode()">Dark/Light Mode</button></li>
-            <li><button onclick="shareResult()">Share Result</button></li>
-            <li>
-                <button onclick="location.href='/components/About.html'"">About</button>
-            </li>
-                        <li><button>Contact Us</button></li>
-        </ul>
-    </header>
-    
+            </div>
+        </div>
+    </nav>
 
-    <div class="coin-container">
-        <h1>Toss Coin</h1>
-        <marquee><h3>Coin Toss by Kundan Kumar</h3></marquee>
-        <br />
-        <div class="coin" id="coin">
-            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231016151806/tails.png" alt="Head">
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero">
+                <h1 class="hero-title">Virtual Coin Toss</h1>
+                <p class="hero-subtitle">Make decisions with a digital coin flip</p>
+            </section>
+
+            <!-- Coin Toss Section -->
+            <section class="coin-section">
+                <div class="coin-container">
+                    <div class="coin-wrapper">
+                        <div class="coin" id="coin">
+                            <div class="coin-face coin-front">
+                                <span class="coin-text">HEADS</span>
+                            </div>
+                            <div class="coin-face coin-back">
+                                <span class="coin-text">TAILS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="coin-controls">
+                        <button class="btn btn-toss" id="tossButton">
+                            <span class="btn-icon">🪙</span>
+                            Toss Coin
+                        </button>
+                        <button class="btn btn-secondary" onclick="shareResult()" id="shareButton" disabled>
+                            <span class="btn-icon">📤</span>
+                            Share Result
+                        </button>
+                    </div>
+                    
+                    <div class="result-display" id="resultDisplay">
+                        <div class="result-text" id="resultText"></div>
+                        <div class="result-stats">
+                            <div class="stat">
+                                <span class="stat-label">Heads:</span>
+                                <span class="stat-value" id="headsCount">0</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Tails:</span>
+                                <span class="stat-value" id="tailsCount">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features">
+                <h2 class="section-title">Why Use Virtual Coin Toss?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Instant Results</h3>
+                        <p>Get your decision in seconds with our fast, reliable coin toss</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Mobile Friendly</h3>
+                        <p>Works perfectly on all devices - desktop, tablet, or mobile</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Fair & Random</h3>
+                        <p>Uses true randomization for unbiased results every time</p>
+                    </div>
+                </div>
+            </section>
         </div>
-        <button id="toss-button"> 
-            Toss Coin 
-        </button>
-        <p class="result"></p>
-    </div>
-    
-    <div class="footer">
-        <div class="social-icons">
-            <a href="https://twitter.com/kundan_k_" target="_blank" rel="noopener noreferrer">
-                <img src="image/x.png" alt="Twitter" class="icon">
-            </a>
-            <a href="https://www.linkedin.com/in/its-kundan/" target="_blank" rel="noopener noreferrer">
-                <img src="image/link.png" alt="LinkedIn" class="icon">
-            </a>
-            <a href="https://github.com/its-kundan" target="_blank" rel="noopener noreferrer">
-                <img src="image/github.png" alt="GitHub" class="icon">
-            </a>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="brand-icon">🪙</span>
+                    <span class="brand-text">Coin Toss</span>
+                </div>
+                <p class="footer-description">Making decisions easier in the digital age</p>
+            </div>
+            
+            <div class="footer-social">
+                <a href="https://twitter.com/kundan_k_" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <img src="assets/icons/x.png" alt="Twitter" class="social-icon">
+                </a>
+                <a href="https://www.linkedin.com/in/its-kundan/" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <img src="assets/icons/icons8-linkedin-50.png" alt="LinkedIn" class="social-icon">
+                </a>
+                <a href="https://github.com/its-kundan" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <img src="assets/icons/github.png" alt="GitHub" class="social-icon">
+                </a>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kundan Kumar. All rights reserved.</p>
+            </div>
         </div>
-        <p>All rights reserved by Kundan Kumar © 2024</p>
-       
-    </div>
-    <script src="script.js"></script>
+    </footer>
+
+    <script src="js/app.js"></script>
 </body>
 </html>

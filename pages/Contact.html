@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Virtual Coin Toss - Get in touch with the developer">
+    <title>Contact | Virtual Coin Toss</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="../index.html" style="text-decoration: none; color: inherit;">
+                    <span class="brand-icon">🪙</span>
+                    <span class="brand-text">Coin Toss</span>
+                </a>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="https://github.com/its-kundan/Coin_Toss" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    <span class="github-icon">📁</span>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="contact-hero">
+                <h1 class="hero-title">Get in Touch</h1>
+                <p class="hero-subtitle">Have questions, suggestions, or just want to say hello?</p>
+            </section>
+
+            <!-- Contact Content -->
+            <section class="contact-content">
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form-section">
+                        <h2>Send a Message</h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="bug-report">Bug Report</option>
+                                    <option value="feature-request">Feature Request</option>
+                                    <option value="general">General Inquiry</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Tell me what's on your mind..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span class="btn-icon">📤</span>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="contact-info-section">
+                        <h2>Contact Information</h2>
+                        
+                        <div class="contact-info">
+                            <div class="info-item">
+                                <div class="info-icon">👨‍💻</div>
+                                <div class="info-content">
+                                    <h3>Developer</h3>
+                                    <p>Kundan Kumar</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <div class="info-icon">📧</div>
+                                <div class="info-content">
+                                    <h3>Email</h3>
+                                    <a href="mailto:kundan51kk@gmail.com">kundan51kk@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <div class="info-icon">🌐</div>
+                                <div class="info-content">
+                                    <h3>Location</h3>
+                                    <p>India</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <h3>Follow Me</h3>
+                            <div class="social-grid">
+                                <a href="https://github.com/its-kundan" target="_blank" rel="noopener noreferrer" class="social-card">
+                                    <div class="social-icon">📁</div>
+                                    <span>GitHub</span>
+                                </a>
+                                
+                                <a href="https://www.linkedin.com/in/its-kundan/" target="_blank" rel="noopener noreferrer" class="social-card">
+                                    <div class="social-icon">💼</div>
+                                    <span>LinkedIn</span>
+                                </a>
+                                
+                                <a href="https://twitter.com/kundan_k_" target="_blank" rel="noopener noreferrer" class="social-card">
+                                    <div class="social-icon">🐦</div>
+                                    <span>Twitter</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="faq-section">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>Is the coin toss truly random?</h3>
+                        <p>Yes! Our application uses cryptographically secure random number generation to ensure completely fair and unbiased results.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Do you collect any personal data?</h3>
+                        <p>No, we don't collect any personal information. Your statistics are stored locally on your device using localStorage.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Can I use this on mobile devices?</h3>
+                        <p>Absolutely! The application is fully responsive and works perfectly on all devices including smartphones and tablets.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>How do I share my results?</h3>
+                        <p>After tossing the coin, click the "Share Result" button. On supported devices, it will use the native share dialog, otherwise it will copy to clipboard.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="brand-icon">🪙</span>
+                    <span class="brand-text">Coin Toss</span>
+                </div>
+                <p class="footer-description">Making decisions easier in the digital age</p>
+            </div>
+            
+            <div class="footer-social">
+                <a href="https://twitter.com/kundan_k_" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <img src="../assets/icons/x.png" alt="Twitter" class="social-icon">
+                </a>
+                <a href="https://www.linkedin.com/in/its-kundan/" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <img src="../assets/icons/icons8-linkedin-50.png" alt="LinkedIn" class="social-icon">
+                </a>
+                <a href="https://github.com/its-kundan" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <img src="../assets/icons/github.png" alt="GitHub" class="social-icon">
+                </a>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kundan Kumar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/contact.js"></script>
+</body>
+</html>
